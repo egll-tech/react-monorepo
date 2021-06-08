@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
+import React from 'react';
 
-export const PrimaryButton = styled.button`
+const BaseButton = styled.button`
   width: 200px;
   height: 70px;
   background-color: #560bad;
@@ -12,3 +13,12 @@ export const PrimaryButton = styled.button`
     background-color: #3f37c9;
   }
 `
+
+export const PrimaryButton: React.FC<unknown> = (props) => {
+  const {children} = props;
+  const trackButtonClicked = () => {
+    console.log('Primary button is being tracked');
+  }
+
+  return <BaseButton onClick={trackButtonClicked}>{children}</BaseButton>
+}
