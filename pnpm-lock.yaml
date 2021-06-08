@@ -8,6 +8,7 @@ importers:
       '@emotion/styled': ^10.0.27
       '@size-limit/preset-small-lib': ^4.11.0
       '@types/react': ^17.0.9
+      emotion-theming: ^10.0.27
       husky: ^6.0.0
       react: ^17.0.2
       size-limit: ^4.11.0
@@ -19,6 +20,7 @@ importers:
       '@emotion/styled': 10.0.27_33bb31e1d857102242df3642b32eda18
       '@size-limit/preset-small-lib': 4.11.0_c48b2c9d6de65f62232b764aa1fde761
       '@types/react': 17.0.9
+      emotion-theming: 10.0.27_33bb31e1d857102242df3642b32eda18
       husky: 6.0.0
       react: 17.0.2
       size-limit: 4.11.0
@@ -38,6 +40,7 @@ importers:
       '@types/react': ^17.0.0
       '@types/react-dom': ^17.0.0
       egll-lib-react: workspace:^0.1.0
+      emotion-theming: ^10.0.27
       prettier: ^2.3.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -55,6 +58,7 @@ importers:
       '@types/react': 17.0.9
       '@types/react-dom': 17.0.6
       egll-lib-react: link:../egll-lib-react
+      emotion-theming: 10.0.27_33bb31e1d857102242df3642b32eda18
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-scripts: 4.0.3_react@17.0.2+typescript@4.3.2
@@ -5207,6 +5211,18 @@ packages:
     resolution: {integrity: sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==}
     engines: {node: '>= 4'}
 
+  /emotion-theming/10.0.27_33bb31e1d857102242df3642b32eda18:
+    resolution: {integrity: sha512-MlF1yu/gYh8u+sLUqA0YuA9JX0P4Hb69WlKc/9OLo+WCXuX6sy/KoIa+qJimgmr2dWqnypYKYPX37esjDBbhdw==}
+    peerDependencies:
+      '@emotion/core': ^10.0.27
+      react: '>=16.3.0'
+    dependencies:
+      '@babel/runtime': 7.14.0
+      '@emotion/core': 10.1.1_react@17.0.2
+      '@emotion/weak-memoize': 0.2.5
+      hoist-non-react-statics: 3.3.2
+      react: 17.0.2
+
   /encodeurl/1.0.2:
     resolution: {integrity: sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=}
     engines: {node: '>= 0.8'}
@@ -6665,6 +6681,11 @@ packages:
       hash.js: 1.1.7
       minimalistic-assert: 1.0.1
       minimalistic-crypto-utils: 1.0.1
+
+  /hoist-non-react-statics/3.3.2:
+    resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
+    dependencies:
+      react-is: 16.13.1
 
   /hoopy/0.1.4:
     resolution: {integrity: sha512-HRcs+2mr52W0K+x8RzcLzuPPmVIKMSv97RGHy0Ea9y/mpcaK+xTrjICA04KAHi4GRzxliNqNJEFYWHghy3rSfQ==}
